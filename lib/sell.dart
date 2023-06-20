@@ -65,77 +65,77 @@ class _SellPageState extends State<SellPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               TextField(
                 controller: _modelNameController,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Model Name',
                     hintText: 'Model Name'),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               TextField(
                 controller: _yearController,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Year',
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               TextField(
                 controller: _transmissionController,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Transmission',
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               TextField(
                 controller: _kilometersDrivenController,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: "KM's Driven",
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               TextField(
                 controller: _numOfOwnersController,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'No. of Owners',
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               TextField(
                 controller: _descriptionController,
-                decoration: InputDecoration(
+                decoration:const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Description',
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               TextField(
                 controller: _priceController, // Add TextField for price
-                decoration: InputDecoration(
+                decoration:const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Price',
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Center(
@@ -143,7 +143,7 @@ class _SellPageState extends State<SellPage> {
                   onPressed: () {
                     savedetails();
                   },
-                  child: Text('Next'),
+                  child:const  Text('Next'),
                 ),
               ),
             ],

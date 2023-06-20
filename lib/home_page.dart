@@ -441,13 +441,13 @@ class _homepageState extends State<homepage> {
               },
             ),
           ),
-          FloatingActionButton(
-            onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => SellPage()));
-            },
-            child: Icon(Icons.navigate_next),
-          )
+          // FloatingActionButton(
+          //   onPressed: () {
+          //     Navigator.push(
+          //         context, MaterialPageRoute(builder: (context) => SellPage()));
+          //   },
+          //   child: Icon(Icons.navigate_next),
+          // )
         ],
       ),
     );

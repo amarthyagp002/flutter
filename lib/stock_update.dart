@@ -77,11 +77,12 @@ class _AddProductPageState extends State<AddProductPage> {
                     partName = value;
                   });
                 },
-                decoration: InputDecoration(
-                  labelText: 'Part Name',
-                ),
+                decoration: const InputDecoration(
+                    labelText: 'Part Name',
+                    border: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.black))),
               ),
-              SizedBox(height: 16.0),
+              const SizedBox(height: 16.0),
               TextField(
                 controller: companycontroller,
                 onChanged: (value) {
@@ -89,11 +90,12 @@ class _AddProductPageState extends State<AddProductPage> {
                     company = value;
                   });
                 },
-                decoration: InputDecoration(
-                  labelText: 'Company',
-                ),
+                decoration: const InputDecoration(
+                    labelText: 'Company',
+                    border: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.black))),
               ),
-              SizedBox(height: 16.0),
+              const SizedBox(height: 16.0),
               TextField(
                 controller: pricecontroller,
                 onChanged: (value) {
@@ -102,18 +104,19 @@ class _AddProductPageState extends State<AddProductPage> {
                   });
                 },
                 keyboardType: TextInputType.number,
-                decoration: InputDecoration(
-                  labelText: 'Price',
-                ),
+                decoration: const InputDecoration(
+                    labelText: 'Price',
+                    border: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.black))),
               ),
-              SizedBox(height: 16.0),
+              const SizedBox(height: 16.0),
               ElevatedButton(
                 onPressed: () {
                   selectImage();
                 },
                 child: Text('Select Image'),
               ),
-              SizedBox(height: 16.0),
+              const SizedBox(height: 16.0),
               _image != null
                   ? Container(
                       height: 200,
@@ -121,11 +124,11 @@ class _AddProductPageState extends State<AddProductPage> {
                       decoration: BoxDecoration(
                           image: DecorationImage(image: MemoryImage(_image!))),
                     )
-                  : Placeholder(
+                  : const Placeholder(
                       fallbackHeight: 200,
                       fallbackWidth: 200,
                     ),
-              SizedBox(height: 16.0),
+              const SizedBox(height: 16.0),
               TextField(
                 controller: desccontroller,
                 onChanged: (value) {
@@ -134,9 +137,10 @@ class _AddProductPageState extends State<AddProductPage> {
                   });
                 },
                 maxLines: 3,
-                decoration: InputDecoration(
-                  labelText: 'Description',
-                ),
+                decoration: const InputDecoration(
+                    labelText: 'Description',
+                    border: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.black))),
               ),
               SizedBox(height: 16.0),
               ElevatedButton(
@@ -149,7 +153,7 @@ class _AddProductPageState extends State<AddProductPage> {
                   Navigator.of(context).pushReplacement(
                       MaterialPageRoute(builder: (context) => StaffHomePage()));
                 },
-                child: Text('Save'),
+                child: const Text('Save'),
               ),
             ],
           ),

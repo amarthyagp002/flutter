@@ -22,6 +22,9 @@ class _viewrequestState extends State<viewrequest> {
   String transmission = "";
   String description = "";
   String model = "";
+  String kmdriven = "";
+  String owners = "";
+  String price = "";
   getselldetails(String uid) async {
     QuerySnapshot querySnapshot = await FirebaseFirestore.instance
         .collection('staff')
@@ -40,6 +43,9 @@ class _viewrequestState extends State<viewrequest> {
     model = (snap.data() as Map<String, dynamic>)['model name'];
     description = (snap.data() as Map<String, dynamic>)['description'];
     transmission = (snap.data() as Map<String, dynamic>)['transmission'];
+    owners = (snap.data() as Map<String, dynamic>)['No.of owners'];
+    kmdriven = (snap.data() as Map<String, dynamic>)['KMs driven'];
+    price = (snap.data() as Map<String, dynamic>)['price'];
     // company = (snap.data() as Map<String, dynamic>)['company'];
     // image = (snap.data() as Map<String, dynamic>)['image'];
 

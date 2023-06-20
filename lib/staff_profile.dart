@@ -74,7 +74,7 @@ class _StaffProfileState extends State<StaffProfile> {
 
   Widget nameTextField() {
     return TextFormField(
-      decoration: InputDecoration(
+      decoration:const InputDecoration(
         border: OutlineInputBorder(
             borderSide: BorderSide(
           color: Colors.black,
@@ -92,7 +92,8 @@ class _StaffProfileState extends State<StaffProfile> {
 
   Widget PhonenumberTextField() {
     return TextFormField(
-      decoration: InputDecoration(
+      keyboardType: TextInputType.number,
+      decoration: const InputDecoration(
         border: OutlineInputBorder(borderSide: BorderSide(color: Colors.black)),
         focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(
@@ -110,7 +111,7 @@ class _StaffProfileState extends State<StaffProfile> {
 
   Widget AddressTextField() {
     return TextFormField(
-      decoration: InputDecoration(
+      decoration:const  InputDecoration(
         border: OutlineInputBorder(
             borderSide: BorderSide(
           color: Colors.black,
@@ -131,7 +132,7 @@ class _StaffProfileState extends State<StaffProfile> {
 
   Widget StateTextField() {
     return TextFormField(
-      decoration: InputDecoration(
+      decoration:const InputDecoration(
         border: OutlineInputBorder(
             borderSide: BorderSide(
           color: Colors.black,
@@ -148,7 +149,7 @@ class _StaffProfileState extends State<StaffProfile> {
 
   Widget DistrictTextField() {
     return TextFormField(
-      decoration: InputDecoration(
+      decoration:const InputDecoration(
         border: OutlineInputBorder(
             borderSide: BorderSide(
           color: Colors.black,
@@ -165,7 +166,8 @@ class _StaffProfileState extends State<StaffProfile> {
 
   Widget pincodeTextField() {
     return TextFormField(
-      decoration: InputDecoration(
+      keyboardType: TextInputType.number,
+      decoration: const InputDecoration(
         border: OutlineInputBorder(
             borderSide: BorderSide(
           color: Colors.black,
@@ -182,7 +184,7 @@ class _StaffProfileState extends State<StaffProfile> {
 
   Widget StafftypeTextField() {
     return TextFormField(
-      decoration: InputDecoration(
+      decoration: const InputDecoration(
         border: OutlineInputBorder(
             borderSide: BorderSide(
           color: Colors.black,
